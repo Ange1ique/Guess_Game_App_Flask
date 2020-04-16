@@ -1,0 +1,17 @@
+{% extends "layout.html" %}
+
+{% block content %}
+  <form action="/" method="POST" id="question">
+    <br>
+    <p>Welk dier dacht je aan?</p>
+    <input class="form-control newAnimal" type="text" name="new_animal" value="{{ new_animal }}">
+    <br>
+    <p>Wat had ik moeten vragen om dat te raden?</p>
+    <input class="form-control newQuestion" type="text" name="new_question" value="{{ new_question }}">
+    <br>
+    <p class="lead">
+        <button class="btn btn-lg btn-secondary mr-5" type="submit" name="action" value="cancel"><strong>Cancel</strong></button>
+        <button class="btn btn-lg purple ml-5" type="submit" name="action" value="correct"><strong>Check</strong></button>
+    </p>
+  </form>
+{% endblock %}

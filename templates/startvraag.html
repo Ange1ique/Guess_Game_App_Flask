@@ -1,0 +1,13 @@
+{% extends "layout.html" %}
+
+{% block content %}
+  <br>
+  <p>Neem een dier in gedachten...</p>
+  <br>
+  <form action="/" method="POST">
+    <p class="lead">
+        <button class="btn btn-lg btn-secondary mr-5" type="submit" name="action" value="cancel"><strong>Cancel</strong></button>
+        <button class="btn btn-lg purple ml-5" type="submit" name="action" value="check"><strong>Check!</strong></button>
+    </p>
+  </form>
+{% endblock %}

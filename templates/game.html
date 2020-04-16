@@ -1,0 +1,14 @@
+
+{% extends "layout.html" %}
+
+{% block content %}
+  <br>
+  <p>{{ question }}</p>
+  <br>
+  <form action="/" method="POST">
+    <p class="lead">
+      <button class="btn btn-lg btn-danger mr-5" type="submit" name="action" value="nee"><strong>NEE</strong></button>
+      <button class="btn btn-lg purple ml-5" type="submit" name="action" value="ja"><strong>JA</strong></button>
+    </p>
+  </form>
+{% endblock %}

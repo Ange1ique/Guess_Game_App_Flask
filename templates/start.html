@@ -1,0 +1,12 @@
+{% extends "layout.html" %}
+
+{% block content %}
+  <br>
+  <p id="question">Je kan steeds antwoorden met ja of nee. Weet ik het dier niet te raden? Dan kan jij mij leren welke nieuwe vraag hiervoor gesteld moet worden.</p>
+  <br>
+  <form action="/" method="POST">
+    <p class="lead">
+      <button class="btn btn-lg purple" type="submit" name="action" value="start"><strong>START</strong></button>
+    </p>
+  </form>
+{% endblock %}
